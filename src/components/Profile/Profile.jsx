@@ -1,4 +1,4 @@
-export default const Profile = ({ name, tag, location, image, stats }) => {
+export default function Profile({ name, tag, location, image, stats }) {
   return (
     <div>
       <div>
