@@ -1,0 +1,68 @@
+.container {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 678px;
+  height: 678px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 249, 249);
+  overflow: hidden;
+}
+
+.userAvatar {
+  margin: 25px auto 0 auto;
+  width: 240px;
+  border-radius: 100%;
+  background-color: #242424;
+}
+
+.userName {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.userTag {
+  font-size: 42px;
+  color: rgb(116, 106, 95);
+  line-height: 1.5;
+}
+
+.userLocation {
+  composes: userTag;
+}
+
+.statsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0;
+  background-color: rgb(175, 169, 167);
+  font-size: 36px;
+  width: 100%;
+}
+
+.statsFollowers {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 3px solid rgb(112, 109, 109);
+  flex-basis: calc(100% / 3);
+}
+
+.statsViews {
+  composes: statsFollowers;
+  border-left: 3px solid rgb(112, 109, 109);
+}
+
+.statsLikes {
+  composes: statsFollowers;
+  border-left: 3px solid rgb(112, 109, 109);
+}
+
+.statsBold {
+  font-weight: 600;
+}
